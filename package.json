@@ -1,0 +1,21 @@
+{
+  "name": "@le-phare/konami",
+  "version": "0.0.1",
+  "description": "Simple konami code",
+  "main": "src/konami.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "semistandard src",
+    "lint:fix": "semistandard --fix",
+    "build": "babel src -d dist && terser --compress --mangle --output dist/konami.min.js -- dist/konami.js",
+    "pre-publish": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "semistandard": "^13.0.1",
+    "terser": "^3.10.12"
+  }
+}
