@@ -20,7 +20,11 @@
     "lint": "semistandard src",
     "lint:fix": "semistandard --fix",
     "build": "babel src -d dist && terser --compress --mangle --output dist/konami.min.js -- dist/konami.js",
-    "pre-publish": "npm run build"
+    "pre-publish": "npm run build",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
+
   },
   "license": "MIT",
   "devDependencies": {
