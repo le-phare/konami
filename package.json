@@ -3,6 +3,18 @@
   "version": "0.0.1",
   "description": "Simple konami code",
   "main": "src/konami.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/le-phare/konami.git"
+  },
+  "keywords": [
+    "konami-code"
+  ],
+  "author": "Nicolas LAURENT",
+  "bugs": {
+    "url": "https://github.com/le-phare/konami/issues"
+  },
+  "homepage": "https://github.com/le-phare/konami#readme",
   "scripts": {
     "test": "npm run lint",
     "lint": "semistandard src",
@@ -12,10 +24,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
     "semistandard": "^13.0.1",
-    "terser": "^3.10.12"
+    "terser": "^3.17.0"
   }
 }
