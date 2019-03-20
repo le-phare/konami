@@ -1,6 +1,6 @@
 {
   "name": "@le-phare/konami",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple konami code",
   "main": "src/konami.js",
   "repository": {
@@ -24,7 +24,6 @@
     "preversion": "npm test",
     "version": "npm run build && git add -A dist",
     "postversion": "git push && git push --tags"
-
   },
   "license": "MIT",
   "devDependencies": {
